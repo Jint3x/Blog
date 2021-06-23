@@ -1,18 +1,21 @@
-import Announcement from "../components/client-side/Announcement"
+import PostImage from "../components/client-side/PostImage"
 import React from "react"
 
 
 function Homepage() {
     return (
         <div>
-            <Announcement 
-             title={"Warning!"}
-             desc={"It is not safe to do this without the proper knowledge, it could lead to bad things."}
-             textColor={"text-black"}
-             bgColor={"bg-red-200"}
-             headerColor={"text-red-500"}
-             borderColor={"border-red-500"}
-            />
+            <div
+             className={"w-1/2 ml-auto mr-auto"}
+            >
+                <PostImage
+                src={"https://ichef.bbci.co.uk/news/976/cpsprodpb/13F00/production/_95146618_bills.jpg"}
+                alt={"A man holding toilet paper as binoculars"}
+                desc={"A man holding toilet paper as binoculars"}
+                imageType={"wide"}
+                />
+            </div>
+            
         </div>
     )
 }

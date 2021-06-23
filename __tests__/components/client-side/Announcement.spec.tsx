@@ -6,7 +6,7 @@ import ReactRenderer from "react-test-renderer"
 import { screen, render } from "@testing-library/react"
 
 
-it("Renders an announcement with a header and text", () => {
+test("Renders an announcement with a header and text", () => {
     render(
         <Announcement
          title={"A special announcement"}
@@ -26,7 +26,7 @@ it("Renders an announcement with a header and text", () => {
 })
 
 
-it("Appends the correct classes to the elements", () => {
+test("Appends the correct classes to the elements", () => {
     render(
         <Announcement
          title={"A special announcement"}
@@ -48,7 +48,7 @@ it("Appends the correct classes to the elements", () => {
 })
 
 
-it("Takes a snapshot of the component", () => {
+test("Takes a snapshot of the component", () => {
     let tree = ReactRenderer.create(
         <Announcement
          title={"A special announcement"}

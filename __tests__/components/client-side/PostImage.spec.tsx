@@ -6,7 +6,7 @@ import ReactRenderer from "react-test-renderer"
 import { screen, render } from "@testing-library/react"
 
 
-it("Renders the component with the correct props", () => {
+test("Renders the component with the correct props", () => {
     render(
         <PostImage 
          src={"/testing/image.png"}
@@ -25,7 +25,7 @@ it("Renders the component with the correct props", () => {
 })
 
 
-it("Takes a snapshot of the component", () => {
+test("Takes a snapshot of the component", () => {
     let tree = ReactRenderer.create(
         <PostImage 
          src={"/testing/image.png"}

@@ -17,7 +17,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "types": [
-      "cypress"
+      "@types/jest",
     ],
     "allowJs": true
   },

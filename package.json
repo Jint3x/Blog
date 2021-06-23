@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "cypress": "^7.5.0",
     "next": "^11.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -12,17 +13,21 @@
     "typescript": "^4.3.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-react": "^7.14.5",
+    "@testing-library/react": "^11.2.7",
     "@types/jest": "^26.0.23",
     "@types/react": "^17.0.11",
+    "@types/react-test-renderer": "^17.0.1",
     "autoprefixer": "^10.2.6",
-    "cypress": "^7.5.0",
+    "jest": "^27.0.4",
     "postcss": "^8.3.5",
-    "ts-jest": "^27.0.3",
-    "@testing-library/react": "^11.2.7",
-    "sass": "^1.35.1"
+    "react-test-renderer": "^17.0.2",
+    "sass": "^1.35.1",
+    "ts-jest": "^27.0.3"
   },
   "scripts": {
-    "test:unit": "jest __tests__",
+    "test:unit": "npx jest __tests__ --coverage",
     "test:e2e": "cypress open",
     "dev": "next dev",
     "build": "next build",

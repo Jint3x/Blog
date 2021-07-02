@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Takes a snapshot of the component 1`] = `
+<nav>
+  <div
+    className="
+            bg-gray-900 flex pt-1 pb-2 content-center flex-col fixed w-full transition-all transform duration-1000
+             sm:flex-row sm:pt-1 sm:h-10
+            sm:animate-headerResize
+            "
+  >
+    <div
+      className="w-full text-center sm:w-40 pl-3 pb-3"
+    >
+      <p
+        className="text-2xl"
+      >
+        <span
+          className="text-main-blue relative bottom-2"
+        >
+          Jint3x
+        </span>
+        <span
+          className="text-main-green relative left-1"
+        >
+          Blogs
+        </span>
+      </p>
+    </div>
+    <div
+      className="w-full self-center sm:w-72 sm:pt-1 sm:ml-auto sm:mr-6"
+    >
+      <ul
+        className="flex justify-around w-full"
+      >
+        <li
+          className="border-main-green border rounded w-20 text-center text-main-blue hover:bg-main-blue-lighter transition-all cursor-pointer"
+        >
+          <a
+            className="w-20"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="border-main-green border rounded w-20 text-center text-main-blue hover:bg-main-blue-lighter transition-all cursor-pointer"
+        >
+          <a
+            className="w-20"
+            href="/blogs"
+          >
+            Blogs
+          </a>
+        </li>
+        <li
+          className="border-main-green border rounded w-20 text-center text-main-blue hover:bg-main-blue-lighter transition-all cursor-pointer"
+        >
+          <a
+            className="w-20"
+            href="https://devjint3x.com"
+          >
+            About me
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+`;

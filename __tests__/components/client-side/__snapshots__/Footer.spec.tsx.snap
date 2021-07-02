@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Take a snapshot of the component 1`] = `
+<footer
+  className="w-full bg-black"
+>
+  <div
+    className="pt-4 pb-4 flex w-80 justify-around mr-auto ml-auto"
+  >
+    <div>
+      <h3
+        className="text-main-green text-base"
+      >
+        About me
+      </h3>
+      <a
+        className="text-main-blue text-sm no-underline pt-1 pb-1 block"
+        href="https://devjint3x.com"
+      >
+        My portfolio
+      </a>
+      <a
+        className="text-main-blue text-sm no-underline pt-1 pb-1 block"
+        href="https://www.linkedin.com/in/alexandar-dimitrov-546782216/"
+      >
+        Linkedin
+      </a>
+    </div>
+    <div>
+      <h3
+        className="text-main-green text-base"
+      >
+        Find me
+      </h3>
+      <a
+        className="text-main-blue text-sm no-underline pt-1 pb-1 block"
+        href="https://github.com/Jint3x"
+      >
+        Github
+      </a>
+      <a
+        className="text-main-blue text-sm no-underline pt-1 pb-1 block"
+        href="https://twitter.com/Jint3x"
+      >
+        Twitter
+      </a>
+    </div>
+  </div>
+</footer>
+`;

@@ -24,7 +24,7 @@ function Header() {
     return (
         <nav>
             <div className={`
-            bg-gray-900 flex pt-1 pb-2 content-center flex-col fixed w-full transition-all transform duration-1000
+            bg-black flex pt-1 pb-2 content-center flex-col fixed w-full transition-all transform duration-1000 z-50
             ${isVisible !== false ? "" : "-translate-y-10 sm:-translate-y-0"} sm:flex-row sm:pt-1 sm:h-10
             ${isVisible === "initial" ? "" : isVisible === true ? "sm:animate-headerResizeOpposite" : "sm:animate-headerResize"}
             `}>

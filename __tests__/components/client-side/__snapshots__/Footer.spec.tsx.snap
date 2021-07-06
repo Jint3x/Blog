@@ -5,7 +5,7 @@ exports[`Take a snapshot of the component 1`] = `
   className="w-full bg-black"
 >
   <div
-    className="pt-4 pb-4 flex w-80 justify-around mr-auto ml-auto"
+    className="pt-4 pb-4 flex w-56 justify-between mr-auto ml-auto sm:w-72"
   >
     <div>
       <h3

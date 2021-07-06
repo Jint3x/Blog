@@ -7,10 +7,12 @@ module.exports = {
         "color-image-comment": "#404040",
         "main-blue": "#137C83",
         "main-green": "#009D10",
+        "default-white": "#EBEBEB",
       },
 
       width: {
         "128": "32rem",
+        "192": "48rem"
       },
 
       borderColor: {
@@ -23,6 +25,10 @@ module.exports = {
         "main-green": "#009D10",
         "main-blue-lighter": "#1DAEB8"
       },
+
+      backgroundImage: () => ({
+        "homepage-introduction": "url('/images/homepage/blogs-introduction.jpg')"
+      }),
 
       keyframes: {
         headerResize: {

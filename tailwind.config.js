@@ -8,11 +8,19 @@ module.exports = {
         "main-blue": "#137C83",
         "main-green": "#009D10",
         "default-white": "#EBEBEB",
+        "default-dark": "#272727",
+        "post-date": "#4E4E4E"
       },
 
       width: {
         "128": "32rem",
         "192": "48rem"
+      },
+
+      height: {
+        "65per": "65%",
+        "20per": "20%",
+        "15per": "15%"
       },
 
       borderColor: {
@@ -23,7 +31,8 @@ module.exports = {
       backgroundColor: {
         "main-blue": "#137C83",
         "main-green": "#009D10",
-        "main-blue-lighter": "#1DAEB8"
+        "main-blue-lighter": "#1DAEB8",
+        "main-green-trans": "#009D1099"
       },
 
       backgroundImage: () => ({
@@ -45,6 +54,14 @@ module.exports = {
       animation: {
         headerResize: "headerResize 0.5s ease-in-out 0s 1 normal forwards",
         headerResizeOpposite: "headerResizeOpposite 0.5s ease-in-out 0s 1 normal forwards",
+      },
+
+      boxShadow: {
+        "personal": "1px 1px 3px black"
+      },
+
+      gradientColorStops: {
+        "main-blue-lighter": "#1DAEB8"
       }
     },
   },

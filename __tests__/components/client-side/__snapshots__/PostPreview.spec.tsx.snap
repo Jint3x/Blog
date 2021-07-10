@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snaphsot of the PostPreview component 1`] = `
+<div
+  className="w-72 ml-auto mr-auto h-80 rounded shadow-lg shadow shadow-md shadow-personal mt-12 mb-12 overflow-hidden"
+>
+  <div
+    className="h-20per bg-center overflow-hidden cursor-pointer"
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundImage": "url(https://example.com/asd)",
+      }
+    }
+  />
+  <div
+    className="h-65per color-default-dark relative"
+  >
+    <h3
+      className="text-center pt-1 pb-2 text-2xl overflow-hidden"
+    >
+      A title
+    </h3>
+    <div
+      className="relative h-3/6 pl-2 pr-2 mt-2"
+    >
+      <p
+        className="overflow-hidden h-full"
+      >
+        A test description
+      </p>
+      <div
+        className="absolute bottom-0 h-12 w-full bg-gradient-to-t from-white to-transparent"
+      />
+    </div>
+    <p
+      className="absolute bottom-1 text-sm left-1 text-post-date"
+    >
+      2nd of Feb, 2021
+    </p>
+  </div>
+  <div
+    className="h-15per bg-main-blue-lighter flex-nowrap flex items-center overflow-hidden relative cursor-pointer"
+    onClick={[Function]}
+  >
+    <div
+      className="absolute h-full w-1/12 right-0 bg-gradient-to-l from-main-blue-lighter to-transparent"
+    />
+    <p
+      className="bg-main-green-trans ml-2 mr-2 text-sm rounded-md p-1 no-break whitespace-nowrap"
+    >
+      Deep Dive
+    </p>
+    <p
+      className="bg-main-green-trans ml-2 mr-2 text-sm rounded-md p-1 no-break whitespace-nowrap"
+    >
+      Technology
+    </p>
+  </div>
+</div>
+`;

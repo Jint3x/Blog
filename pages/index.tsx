@@ -1,5 +1,6 @@
 import Header from "../components/client-side/Header"
 import Footer from "../components/client-side/Footer"
+import PostPreview from "../components/client-side/PostPreview"
 import React from "react"
 
 
@@ -9,6 +10,17 @@ function Homepage() {
             <Header />
             
             <BlogIntroduction />
+
+            <PostPreview 
+             thumbnail={"/images/homepage/blogs-introduction.jpg"}
+             title={"A title"}
+             description={`As a developer, I’ve always asked myself ‘how?’. In a world, where things just keep getting more complex and difficult to learn, I want to create a place,
+             a community where even the most complex things about technology and programming are explored in depth and fundametally understood. The first step towards
+             achieving this goal, is this website. Here, I will try to go very in depth and explain many and different subjects about computers and programming.`}
+             date={"2nd of Feb, 2021"}
+             tags={["Deep Dive", "SDF", "Tdsogy", "Technology", "Technology"]}
+             url={"/blog/how-to-test"}
+            />
 
             <Footer />
         </div>

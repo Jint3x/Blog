@@ -5,8 +5,8 @@ exports[`Takes a snapshot of the component 1`] = `
   <div
     className="
             bg-black flex pt-1 pb-2 content-center flex-col fixed w-full transition-all transform duration-1000 z-50
-             sm:flex-row sm:pt-1 sm:h-10
-            sm:animate-headerResize
+            
+            sm:flex-row sm:pt-1 sm:h-10 sm:left-1/2 sm:-translate-x-1/2 sm:rounded-b-3xl sm:w-128
             "
   >
     <div

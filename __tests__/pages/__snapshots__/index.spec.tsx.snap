@@ -32,3 +32,111 @@ exports[`Take a snapshot of the BlogIntroduction component 1`] = `
   </div>
 </section>
 `;
+
+exports[`Take a snapshot of the recently posted blog component 1`] = `
+<div
+  className="max-w-lg ml-auto mr-auto"
+>
+  <h2
+    className="text-center mt-12 text-2xl font-normal"
+  >
+    Recently Posted Blogs
+  </h2>
+  <div
+    className="flex align-center justify-center flex-col sm:flex-row sm:items-center"
+  >
+    <div
+      className="w-12 h-12 rounded-full bg-black ml-auto mr-auto mt-2 cursor-pointer flex items-center relative top-8 sm:static transform duration-300 sm:hover:-translate-x-2"
+    >
+      <img
+        alt="Switch Blog Icon"
+        className="w-8 block ml-auto mr-auto transform -rotate-90 sm:rotate-180"
+        src="/images/homepage/arrow.png"
+      />
+    </div>
+    <div
+      className="relative"
+    >
+      <div
+        className="w-72 bg-white ml-auto mr-auto h-80 rounded shadow-lg shadow shadow-md shadow-personal mt-12 mb-12 overflow-hidden"
+      >
+        <div
+          className="h-20per bg-center overflow-hidden cursor-pointer"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundImage": "url(/images/homepage/blogs-introduction.jpg)",
+            }
+          }
+        />
+        <div
+          className="h-65per color-default-dark relative"
+        >
+          <h3
+            className="text-center pt-1 pb-2 text-2xl overflow-hidden"
+          >
+            A title
+          </h3>
+          <div
+            className="relative h-3/6 pl-2 pr-2 mt-2"
+          >
+            <p
+              className="overflow-hidden h-full"
+            >
+              As a developer, I’ve always asked myself ‘how?’. In a world....
+            </p>
+            <div
+              className="absolute bottom-0 h-12 w-full bg-gradient-to-t from-white to-transparent"
+            />
+          </div>
+          <p
+            className="absolute bottom-1 text-sm left-1 text-post-date"
+          >
+            2nd of Feb, 2021
+          </p>
+        </div>
+        <div
+          className="h-15per bg-main-blue-lighter flex-nowrap flex items-center overflow-hidden relative cursor-pointer"
+          onClick={[Function]}
+        >
+          <div
+            className="absolute h-full w-1/12 right-0 bg-gradient-to-l from-main-blue-lighter to-transparent"
+          />
+          <p
+            className="bg-main-green-trans ml-2 mr-2 text-sm rounded-md p-1 no-break whitespace-nowrap"
+          >
+            Deep Dive
+          </p>
+          <p
+            className="bg-main-green-trans ml-2 mr-2 text-sm rounded-md p-1 no-break whitespace-nowrap"
+          >
+            SDF
+          </p>
+          <p
+            className="bg-main-green-trans ml-2 mr-2 text-sm rounded-md p-1 no-break whitespace-nowrap"
+          >
+            Tdsogy
+          </p>
+          <p
+            className="bg-main-green-trans ml-2 mr-2 text-sm rounded-md p-1 no-break whitespace-nowrap"
+          >
+            Technology
+          </p>
+        </div>
+      </div>
+      <div
+        className="absolute w-72 h-80 bg-main-green transform translate-x-4 -rotate-6 top-0 -z-10 mt-12 mb-12 inset-x-1/2 -translate-x-1/2"
+      />
+    </div>
+    <div
+      className="w-12 h-12 rounded-full bg-black ml-auto mr-auto mt-2 cursor-pointer flex items-center relative bottom-10 sm:static transform duration-300 sm:hover:translate-x-2"
+    >
+      <img
+        alt="Switch Blog Icon"
+        className="w-8 block ml-auto mr-auto transform rotate-90 sm:rotate-0"
+        src="/images/homepage/arrow.png"
+      />
+    </div>
+  </div>
+</div>
+`;

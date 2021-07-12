@@ -39,35 +39,24 @@ module.exports = {
         "homepage-introduction": "url('/images/homepage/blogs-introduction.jpg')"
       }),
 
-      keyframes: {
-        headerResize: {
-          "0%": {left: 0, transform: "translateX(0%)", borderRadius: "0rem", width: "100%"},
-          "100%": {left: "50%", transform: "translateX(-50%)", borderRadius: "0 0 1.5rem 1.5rem", width: "32rem"}
-        },
-
-        headerResizeOpposite: {
-          "0%": {left: "50%", transform: "translateX(-50%)", borderRadius: "0 0 1.5rem 1.5rem", width: "32rem"},
-          "100%": {left: 0, transform: "translateX(0%)", borderRadius: "0rem", width: "100%"},
-        },
-      },
-
-      animation: {
-        headerResize: "headerResize 0.5s ease-in-out 0s 1 normal forwards",
-        headerResizeOpposite: "headerResizeOpposite 0.5s ease-in-out 0s 1 normal forwards",
-      },
-
       boxShadow: {
         "personal": "1px 1px 3px black"
       },
 
       gradientColorStops: {
         "main-blue-lighter": "#1DAEB8"
+      },
+
+      zIndex: {
+        "-10": "-10"
       }
     },
   },
   variants: {
     extend: {
-      backgroundColor: ["hover"]
+      backgroundColor: ["hover"],
+      transform: ["hover"]
+
     },
   },
   plugins: [],

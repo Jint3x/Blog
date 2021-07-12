@@ -35,6 +35,28 @@ test("Renders all the text successfully", () => {
 test.todo("Make sure the links are correctly navigating when clicked.")
 
 
+test("Validates that the loading mode works", async () => {
+    render(
+        <PostPreview 
+         thumbnail={"https://example.com/asd"}
+         title={"A title"}
+         description={"A test description"}
+         date={"2nd of Feb, 2021"}
+         tags={["Deep Dive", "Technology"]}
+         url={"/blog/how-to-test"}
+         loading={true}
+        />
+    )
+
+    let hiddenTitle = screen.queryByText("A title");
+    let loadingText = screen.getByText("Loading...");
+
+
+    expect(hiddenTitle).toBe(null);
+    expect(loadingText.nodeName).toBe("H3")
+})
+
+
 test("Snaphsot of the PostPreview component", () => {
     let tree = ReactRenderer.create(
         <PostPreview 

@@ -39,20 +39,29 @@ test("Matches the correct styles on the components", () => {
 })
 
 
-test.todo("Changes the header style based on the scroll position")
-    // const { container, rerender } = render(<Header />);
-    // let mainDiv = container.querySelector("nav")?.firstChild as HTMLDivElement;
+test("Changes the header style based on the scroll position", () => {
+    Object.defineProperty(window, "innerWidth", {
+        writable: true,
+        configurable: true,
+        value: 400,
+    });
 
-    // expect(mainDiv.classList).not.toContain("-translate-y-10");
-    // expect(mainDiv.classList).not.toContain("sm:-translate-y-0");
+    window.dispatchEvent(new Event("resize"));
 
-    // document.documentElement.scrollTop = 100;
-    // rerender(<Header />);
-    // mainDiv = container.querySelector("nav")?.firstChild as HTMLDivElement;
+    const { container } = render(<Header />);
+    let mainDivBeforeScroll = (container.querySelector("nav")?.firstChild?.cloneNode() as HTMLDivElement)
 
-    // console.log(mainDiv)
-    // expect(mainDiv.classList).toContain("-translate-y-10");
-    // expect(mainDiv.classList).toContain("sm:-translate-y-0");
+    document.documentElement.scrollTop = 100;
+    window.dispatchEvent(new Event("scroll"));
+
+    let mainDivAfterScroll = container.querySelector("nav")?.firstChild as HTMLDivElement;
+
+    expect(mainDivBeforeScroll.classList).not.toContain("-translate-y-10");
+    expect(mainDivBeforeScroll.classList).not.toContain("sm:-translate-y-0");
+    expect(mainDivAfterScroll.classList).toContain("-translate-y-10");
+    expect(mainDivAfterScroll.classList).toContain("sm:-translate-y-0");
+})
+    
 
 
 test("Takes a snapshot of the component", () => {

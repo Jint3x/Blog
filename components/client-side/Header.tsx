@@ -1,28 +1,31 @@
 import React, { useEffect, useState } from "react"
 
+let topIsVisible: boolean;
+let topSetIsVisible: React.Dispatch<React.SetStateAction<boolean>>;
 
 function Header() {
-    let [isVisible, setIsVisible]: [any, any] = useState("inital");
+    let [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
-        window.addEventListener("scroll", () => scrollFunction())
+        // I couldn't figure out how to run a scroll event listener that uses the state from above to add effects to the mobile 
+        // header and then remove it (even with the return option in the useEffect). This is why global variables will be set and then
+        // they will be accessed from the scroll function.
+        topIsVisible = isVisible;
+        topSetIsVisible = setIsVisible;
 
-        // Used to detect when the page scroll is below 50px, if so, some new styles will be applied to the header.
-        function scrollFunction() {
-            if ((document.documentElement.scrollTop || document.body.scrollTop) > 75 && isVisible) {
-                setIsVisible(false);
-            } else if ((document.documentElement.scrollTop || document.body.scrollTop) < 75 && !isVisible) {
-                setIsVisible(true)
-            }
+        window.addEventListener("scroll", scrollFunction)
+        
+        return function clean() {
+            window.document.removeEventListener("scroll", scrollFunction)
         }
-    }, [])
+    }, [isVisible])
 
     return (
         <nav>
             <div className={`
              bg-black flex pt-1 pb-2 content-center flex-col fixed w-full transition-all transform duration-1000 z-50
-             ${isVisible !== false ? "" : "-translate-y-10 sm:-translate-y-0"}
              sm:flex-row sm:pt-1 sm:h-10 sm:left-1/2 sm:-translate-x-1/2 sm:rounded-b-3xl sm:w-128
+             ${isVisible === true ? "" : "-translate-y-10 sm:-translate-y-0"}
             `}>
                 <LogoText />
                 <Navigation />
@@ -31,11 +34,25 @@ function Header() {
     )
 }
 
+
+// Used to detect when the page scroll is below 75px, if so, some new styles will be applied to the header.
+function scrollFunction() {
+    let isVisible = topIsVisible;
+    let setIsVisible = topSetIsVisible;
+
+    if ((document.documentElement.scrollTop || document.body.scrollTop) > 75 && isVisible) {
+        setIsVisible(false);
+    } else if ((document.documentElement.scrollTop || document.body.scrollTop) < 75 && !isVisible) {
+        setIsVisible(true)
+    }
+}
+
+
 function LogoText() {
     return (
         <div className={`w-full text-center sm:w-40 pl-3 pb-3`}>
                 <p className={"text-2xl"}>
-                    <span className={"text-main-blue relative bottom-2"}>Jint3x</span>
+                    <span className={"text-main-blue relative bottom-2"}>Jint3x's</span>
                     <span className={"text-main-green relative left-1"}>Blogs</span>
                 </p>
         </div>

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Take a snapshot of all of the different usages of the component. Make multiple tests 1`] = `
+<div
+  className="pt-6 pb-4 w-full"
+>
+  <img
+    alt="Special Image"
+    className="pt-2 pb-2"
+    src="/special/image"
+  />
+  <h1
+    className="w-full color-default-dark pt-2 pb-2 text-2xl md:text-3xl font-medium text-center"
+  >
+    A test title
+  </h1>
+  <p
+    className="w-full pt-1 pb-2 color-default-dark text-base md:text-lg"
+  >
+    A test text
+  </p>
+</div>
+`;
+
+exports[`Take a snapshot of all of the different usages of the component. Make multiple tests 2`] = `
+<div
+  className="pt-6 pb-4 w-full"
+>
+  <h2
+    className="w-full pb-2 color-default-dark text-xl md:text-2xl font-medium"
+  >
+    My Section!
+  </h2>
+  <p
+    className="w-full pt-1 pb-2 color-default-dark text-base md:text-lg"
+  >
+    This is my section!
+  </p>
+</div>
+`;
+
+exports[`Take a snapshot of all of the different usages of the component. Make multiple tests 3`] = `
+<div
+  className="pt-4 pb-2 w-full"
+>
+  <h3
+    className="w-full color-default-dark text-lg md:text-xl font-medium"
+  >
+    My Sub Section!
+  </h3>
+  <p
+    className="w-full pt-1 pb-2 color-default-dark text-base md:text-lg"
+  >
+    This is my sub section!
+  </p>
+</div>
+`;
+
+exports[`Take a snapshot of all of the different usages of the component. Make multiple tests 4`] = `
+<p
+  className="w-full pt-1 pb-2 color-default-dark text-base md:text-lg"
+>
+  This is my sub section!
+</p>
+`;

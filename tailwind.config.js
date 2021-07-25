@@ -23,6 +23,10 @@ module.exports = {
         "15per": "15%"
       },
 
+      maxHeight: {
+        "128": "32rem"
+      },
+
       borderColor: {
         "main-blue": "#137C83",
         "main-green": "#009D10",
@@ -49,6 +53,17 @@ module.exports = {
 
       zIndex: {
         "-10": "-10"
+      },
+
+      keyframes: {
+        spinner: {
+          "0%": { transform: "rotate(0deg); border-top-color: #009D10;" },
+          "100%": { transform: "rotate(360deg); border-top-color: #009D10;" }
+        }
+      },
+
+      animation: {
+        "spinner": "spinner 1s linear infinite"
       }
     },
   },

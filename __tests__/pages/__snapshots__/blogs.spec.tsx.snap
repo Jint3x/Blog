@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the BlogPage 1`] = `
+Array [
+  <nav>
+    <div
+      className="
+             bg-black flex pt-1 pb-2 content-center flex-col fixed w-full transition-all transform duration-1000 z-50
+             sm:flex-row sm:pt-1 sm:h-10 sm:left-1/2 sm:-translate-x-1/2 sm:rounded-b-3xl sm:w-128
+             
+            "
+    >
+      <div
+        className="w-full text-center sm:w-40 pl-3 pb-3"
+      >
+        <p
+          className="text-2xl"
+        >
+          <span
+            className="text-main-blue relative bottom-2"
+          >
+            Jint3x's
+          </span>
+          <span
+            className="text-main-green relative left-1"
+          >
+            Blogs
+          </span>
+        </p>
+      </div>
+      <div
+        className="w-full self-center sm:w-72 sm:pt-1 sm:ml-auto sm:mr-6"
+      >
+        <ul
+          className="flex justify-around w-full"
+        >
+          <li
+            className="border-main-green border rounded w-20 text-center text-main-blue hover:bg-main-blue-lighter transition-all cursor-pointer"
+          >
+            <a
+              className="w-20"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li
+            className="border-main-green border rounded w-20 text-center text-main-blue hover:bg-main-blue-lighter transition-all cursor-pointer"
+          >
+            <a
+              className="w-20"
+              href="/blogs"
+            >
+              Blogs
+            </a>
+          </li>
+          <li
+            className="border-main-green border rounded w-20 text-center text-main-blue hover:bg-main-blue-lighter transition-all cursor-pointer"
+          >
+            <a
+              className="w-20"
+              href="https://jint3x.dev"
+            >
+              About me
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>,
+  <section>
+    <div
+      className="pt-24 pb-12 sm:pt-16"
+    >
+      <div>
+        <h1
+          className="text-center text-2xl"
+        >
+          Search Blogs
+        </h1>
+        <input
+          className="w-64 sm:w-80 md:w-96 lg:w-128 h-6 sm:h-8 border pl-2 pr-2 bg-main-green-trans border-2 border-solid border-main-green rounded ml-auto mr-auto block mt-4 outline-none"
+          type="text"
+        />
+        <p
+          className="text-red-500 w-64 md:w-96 lg:w-128 ml-auto mr-auto text-center"
+        >
+          Search feature not available yet
+        </p>
+      </div>
+      <section>
+        <div
+          className="flex sm:max-w-3xl flex-col flex-wrap justify-space-around ml-auto mr-auto xl:max-w-5xl sm:min-w-sm sm:flex sm:grid-cols-2 sm:grid-rows-0 xl:grid-cols-3 xl:grid-rows-2"
+        >
+          <div>
+            <h2
+              className="text-center mt-32 mb-32 text-xl sm:mt-64 sm:mb-64 xl:mt-80 xl:mb-80"
+            >
+              No blogs available
+            </h2>
+          </div>
+        </div>
+      </section>
+      <div>
+        <p
+          className="w-12 flex justify-around ml-auto mr-auto"
+        >
+          <span
+            className="cursor-pointer"
+            onClick={[Function]}
+          >
+            
+          </span>
+          <span
+            className="text-main-green"
+          >
+            1
+          </span>
+          <span
+            className="cursor-pointer"
+            onClick={[Function]}
+          >
+            
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>,
+  <footer
+    className="w-full bg-black"
+  >
+    <div
+      className="pt-4 pb-4 flex w-56 justify-between mr-auto ml-auto sm:w-72"
+    >
+      <div>
+        <h3
+          className="text-main-green text-base"
+        >
+          About me
+        </h3>
+        <a
+          className="text-main-blue text-sm no-underline pt-1 pb-1 block"
+          href="https://jint3x.dev"
+        >
+          My portfolio
+        </a>
+        <a
+          className="text-main-blue text-sm no-underline pt-1 pb-1 block"
+          href="https://www.linkedin.com/in/jint3x/"
+        >
+          Linkedin
+        </a>
+      </div>
+      <div>
+        <h3
+          className="text-main-green text-base"
+        >
+          Find me
+        </h3>
+        <a
+          className="text-main-blue text-sm no-underline pt-1 pb-1 block"
+          href="https://github.com/Jint3x"
+        >
+          Github
+        </a>
+        <a
+          className="text-main-blue text-sm no-underline pt-1 pb-1 block"
+          href="https://twitter.com/Jint3x"
+        >
+          Twitter
+        </a>
+      </div>
+    </div>
+  </footer>,
+]
+`;

@@ -55,7 +55,7 @@ exports[`Take a snapshot of the recently posted blog component 1`] = `
       />
     </div>
     <div
-      className="relative"
+      className="relative overflow-hidden sm:overflow-visible"
     >
       <div
         className="w-72 bg-white ml-auto mr-auto h-80 rounded shadow-lg shadow shadow-md shadow-personal mt-12 mb-12 overflow-hidden"

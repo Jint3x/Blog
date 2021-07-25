@@ -15,13 +15,13 @@ exports[`Take a snapshot of the component 1`] = `
       </h3>
       <a
         className="text-main-blue text-sm no-underline pt-1 pb-1 block"
-        href="https://devjint3x.com"
+        href="https://jint3x.dev"
       >
         My portfolio
       </a>
       <a
         className="text-main-blue text-sm no-underline pt-1 pb-1 block"
-        href="https://www.linkedin.com/in/alexandar-dimitrov-546782216/"
+        href="https://www.linkedin.com/in/jint3x/"
       >
         Linkedin
       </a>

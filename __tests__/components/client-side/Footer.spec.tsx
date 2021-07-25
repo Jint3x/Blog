@@ -18,9 +18,9 @@
 
     expect(headerOne.nodeName).toBe("H3");
     expect(portfolio.nodeName).toBe("A");
-    expect(portfolio.href).toBe("https://devjint3x.com/");
+    expect(portfolio.href).toBe("https://jint3x.dev/");
     expect(linkedin.nodeName).toBe("A");
-    expect(linkedin.href).toBe("https://www.linkedin.com/in/alexandar-dimitrov-546782216/");
+    expect(linkedin.href).toBe("https://www.linkedin.com/in/jint3x/");
 
     expect(headerTwo.nodeName).toBe("H3");
     expect(github.nodeName).toBe("A");

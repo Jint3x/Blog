@@ -9,12 +9,12 @@ function Footer() {
                     <h3 className={"text-main-green text-base"}>About me</h3>
 
                     <FooterLink 
-                     href={"https://devjint3x.com"}
+                     href={"https://jint3x.dev"}
                      text={"My portfolio"}
                     />
 
                     <FooterLink 
-                     href={"https://www.linkedin.com/in/alexandar-dimitrov-546782216/"}
+                     href={"https://www.linkedin.com/in/jint3x/"}
                      text={"Linkedin"}
                     />  
                 </div>

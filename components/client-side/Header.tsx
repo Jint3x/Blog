@@ -75,7 +75,7 @@ function Navigation() {
                     />
 
                     <NavigationLink 
-                     href={"https://devjint3x.com"}
+                     href={"https://jint3x.dev"}
                      text={"About me"}
                     />
                 </ul>

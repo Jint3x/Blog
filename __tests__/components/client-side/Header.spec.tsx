@@ -20,7 +20,7 @@ test("Renders the header and verifies its links", () => {
     expect(home.href).toBe("http://localhost/");
 
     expect(about.nodeName).toBe("A");
-    expect(about.href).toBe("https://devjint3x.com/");
+    expect(about.href).toBe("https://jint3x.dev/");
 })
 
 
